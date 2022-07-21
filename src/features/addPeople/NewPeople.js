@@ -11,6 +11,7 @@ export function NewPeople() {
 
   const [peopleName, setPeopleName] = useState("");
 
+  console.log("pessoas", peopleName)
   return (
     <div>
         <div>
@@ -26,6 +27,8 @@ export function NewPeople() {
               Adicionar Pessoa
             </button>
         </div>
+
+        <p>{peopleName}</p>
     </div>
   );
 }
